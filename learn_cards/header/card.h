@@ -14,8 +14,8 @@ class Card{
 
     public:
     Card(int _rank, std::string _term, std::string _answer) : rank(_rank), term(_term), answer(_answer){
-        if(term.length() == 0 || answer.size() == 0){
-            throw std::runtime_error("Term or Answer empty");
+        if(term.length() == 0 || answer.size() == 0 || term == answer){
+            throw std::runtime_error("Term or Answer empty or same!");
         }
     }
 
