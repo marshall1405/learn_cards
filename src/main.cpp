@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../header/card.h"
-#include "../header/set.h"
+#include "./header/card.h"
+#include "./header/set.h"
 
 
 int main(){
