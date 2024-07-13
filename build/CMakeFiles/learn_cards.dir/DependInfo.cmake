@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/src/app/card.cpp" "CMakeFiles/learn_cards.dir/src/app/card.cpp.o" "gcc" "CMakeFiles/learn_cards.dir/src/app/card.cpp.o.d"
+  "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/src/app/menu.cpp" "CMakeFiles/learn_cards.dir/src/app/menu.cpp.o" "gcc" "CMakeFiles/learn_cards.dir/src/app/menu.cpp.o.d"
   "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/src/app/set.cpp" "CMakeFiles/learn_cards.dir/src/app/set.cpp.o" "gcc" "CMakeFiles/learn_cards.dir/src/app/set.cpp.o.d"
   "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/src/main.cpp" "CMakeFiles/learn_cards.dir/src/main.cpp.o" "gcc" "CMakeFiles/learn_cards.dir/src/main.cpp.o.d"
   )

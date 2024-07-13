@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/learn_cards.dir/src/app/card.cpp.o"
   "CMakeFiles/learn_cards.dir/src/app/card.cpp.o.d"
+  "CMakeFiles/learn_cards.dir/src/app/menu.cpp.o"
+  "CMakeFiles/learn_cards.dir/src/app/menu.cpp.o.d"
   "CMakeFiles/learn_cards.dir/src/app/set.cpp.o"
   "CMakeFiles/learn_cards.dir/src/app/set.cpp.o.d"
   "CMakeFiles/learn_cards.dir/src/main.cpp.o"

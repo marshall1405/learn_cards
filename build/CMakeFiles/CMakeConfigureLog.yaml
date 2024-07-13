@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6"
-      binary: "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6"
+      source: "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs"
+      binary: "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
       CMAKE_C_FLAGS: "-ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/davidpavlicek03/anaconda3/include"
@@ -75,20 +75,20 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6'
+        Change Dir: '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs'
         
-        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_34290/fast
-        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_34290.dir/build.make CMakeFiles/cmTC_34290.dir/build
-        gmake[1]: Entering directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6'
-        Building C object CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o
-        /Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang   -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_8acea/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_8acea.dir/build.make CMakeFiles/cmTC_8acea.dir/build
+        gmake[1]: Entering directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs'
+        Building C object CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o
+        /Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang   -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCCompilerABI.c
         clang version 14.0.6
         Target: arm64-apple-darwin20.0.0
         Thread model: posix
         InstalledDir: /Users/davidpavlicek03/anaconda3/bin
         clang-14: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
          (in-process)
-         "/Users/davidpavlicek03/anaconda3/bin/clang-14" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 530 -v -fcoverage-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6 -resource-dir /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /Users/davidpavlicek03/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdebug-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6 -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCCompilerABI.c
+         "/Users/davidpavlicek03/anaconda3/bin/clang-14" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 530 -v -fcoverage-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs -resource-dir /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /Users/davidpavlicek03/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdebug-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target arm64-apple-darwin23.5.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
@@ -99,14 +99,14 @@ events:
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking C executable cmTC_34290
-        /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34290.dir/link.txt --verbose=1
-        /Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/davidpavlicek03/anaconda3/lib -L/Users/davidpavlicek03/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -o cmTC_34290
+        Linking C executable cmTC_8acea
+        /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8acea.dir/link.txt --verbose=1
+        /Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/davidpavlicek03/anaconda3/lib -L/Users/davidpavlicek03/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -o cmTC_8acea
         clang version 14.0.6
         Target: arm64-apple-darwin20.0.0
         Thread model: posix
         InstalledDir: /Users/davidpavlicek03/anaconda3/bin
-         "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld" -demangle -lto_library /Users/davidpavlicek03/anaconda3/lib/libLTO.14.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_34290 -L/Users/davidpavlicek03/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/davidpavlicek03/anaconda3/lib -v CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -lSystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a
+         "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld" -demangle -lto_library /Users/davidpavlicek03/anaconda3/lib/libLTO.14.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_8acea -L/Users/davidpavlicek03/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/davidpavlicek03/anaconda3/lib -v CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -lSystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld  PROJECT:ld64-530
         BUILD 07:38:32 Sep  7 2022
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
@@ -115,7 +115,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
-        gmake[1]: Leaving directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6'
+        gmake[1]: Leaving directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs'
         
       exitCode: 0
   -
@@ -157,20 +157,20 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6']
+        ignore line: [Change Dir: '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_34290/fast]
-        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_34290.dir/build.make CMakeFiles/cmTC_34290.dir/build]
-        ignore line: [gmake[1]: Entering directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6']
-        ignore line: [Building C object CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang   -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_8acea/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_8acea.dir/build.make CMakeFiles/cmTC_8acea.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs']
+        ignore line: [Building C object CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang   -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang version 14.0.6]
         ignore line: [Target: arm64-apple-darwin20.0.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Users/davidpavlicek03/anaconda3/bin]
         ignore line: [clang-14: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ (in-process)]
-        ignore line: [ "/Users/davidpavlicek03/anaconda3/bin/clang-14" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 530 -v -fcoverage-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6 -resource-dir /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /Users/davidpavlicek03/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdebug-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6 -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/Users/davidpavlicek03/anaconda3/bin/clang-14" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 530 -v -fcoverage-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs -resource-dir /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /Users/davidpavlicek03/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdebug-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target arm64-apple-darwin23.5.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
@@ -181,14 +181,14 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_34290]
-        ignore line: [/opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34290.dir/link.txt --verbose=1]
-        ignore line: [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -Wl -pie -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/davidpavlicek03/anaconda3/lib -L/Users/davidpavlicek03/anaconda3/lib -v -Wl -v CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -o cmTC_34290]
+        ignore line: [Linking C executable cmTC_8acea]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8acea.dir/link.txt --verbose=1]
+        ignore line: [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -Wl -pie -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/davidpavlicek03/anaconda3/lib -L/Users/davidpavlicek03/anaconda3/lib -v -Wl -v CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -o cmTC_8acea]
         ignore line: [clang version 14.0.6]
         ignore line: [Target: arm64-apple-darwin20.0.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Users/davidpavlicek03/anaconda3/bin]
-        link line: [ "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld" -demangle -lto_library /Users/davidpavlicek03/anaconda3/lib/libLTO.14.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_34290 -L/Users/davidpavlicek03/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/davidpavlicek03/anaconda3/lib -v CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o -lSystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld" -demangle -lto_library /Users/davidpavlicek03/anaconda3/lib/libLTO.14.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_8acea -L/Users/davidpavlicek03/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/davidpavlicek03/anaconda3/lib -v CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o -lSystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a]
           arg [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -204,7 +204,7 @@ events:
           arg [-syslibroot] ==> ignore
           arg [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_34290] ==> ignore
+          arg [cmTC_8acea] ==> ignore
           arg [-L/Users/davidpavlicek03/anaconda3/lib] ==> dir [/Users/davidpavlicek03/anaconda3/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
@@ -214,7 +214,7 @@ events:
           arg [-rpath] ==> ignore
           arg [/Users/davidpavlicek03/anaconda3/lib] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_34290.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_8acea.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a] ==> lib [/Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a]
         ignore line: [@(#)PROGRAM:ld  PROJECT:ld64-530]
@@ -225,7 +225,7 @@ events:
         ignore line: [	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
         ignore line: [Framework search paths:]
         ignore line: [	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/]
-        ignore line: [gmake[1]: Leaving directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-sJfLc6']
+        ignore line: [gmake[1]: Leaving directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-oLlHrs']
         ignore line: []
         ignore line: []
         Library search paths: [;/Users/davidpavlicek03/anaconda3/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
@@ -251,8 +251,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC"
-      binary: "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC"
+      source: "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo"
+      binary: "/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
       CMAKE_CXX_FLAGS: "-ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/davidpavlicek03/anaconda3/include"
@@ -266,20 +266,20 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC'
+        Change Dir: '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo'
         
-        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_d73a6/fast
-        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_d73a6.dir/build.make CMakeFiles/cmTC_d73a6.dir/build
-        gmake[1]: Entering directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC'
-        Building CXX object CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o
-        /Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang++   -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_d34b6/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_d34b6.dir/build.make CMakeFiles/cmTC_d34b6.dir/build
+        gmake[1]: Entering directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo'
+        Building CXX object CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o
+        /Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang++   -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang version 14.0.6
         Target: arm64-apple-darwin20.0.0
         Thread model: posix
         InstalledDir: /Users/davidpavlicek03/anaconda3/bin
         clang-14: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
          (in-process)
-         "/Users/davidpavlicek03/anaconda3/bin/clang-14" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 530 -v -fcoverage-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC -resource-dir /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /Users/davidpavlicek03/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /Users/davidpavlicek03/anaconda3/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC -ferror-limit 19 -fvisibility-inlines-hidden -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Users/davidpavlicek03/anaconda3/bin/clang-14" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 530 -v -fcoverage-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo -resource-dir /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /Users/davidpavlicek03/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /Users/davidpavlicek03/anaconda3/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo -ferror-limit 19 -fvisibility-inlines-hidden -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target arm64-apple-darwin23.5.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
@@ -291,14 +291,14 @@ events:
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_d73a6
-        /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d73a6.dir/link.txt --verbose=1
-        /Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang++ -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/davidpavlicek03/anaconda3/lib -L/Users/davidpavlicek03/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d73a6
+        Linking CXX executable cmTC_d34b6
+        /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d34b6.dir/link.txt --verbose=1
+        /Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang++ -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/davidpavlicek03/anaconda3/lib -L/Users/davidpavlicek03/anaconda3/lib -v -Wl,-v CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d34b6
         clang version 14.0.6
         Target: arm64-apple-darwin20.0.0
         Thread model: posix
         InstalledDir: /Users/davidpavlicek03/anaconda3/bin
-         "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld" -demangle -lto_library /Users/davidpavlicek03/anaconda3/lib/libLTO.14.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_d73a6 -L/Users/davidpavlicek03/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/davidpavlicek03/anaconda3/lib -v CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a
+         "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld" -demangle -lto_library /Users/davidpavlicek03/anaconda3/lib/libLTO.14.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_d34b6 -L/Users/davidpavlicek03/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/davidpavlicek03/anaconda3/lib -v CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld  PROJECT:ld64-530
         BUILD 07:38:32 Sep  7 2022
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
@@ -307,7 +307,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
-        gmake[1]: Leaving directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC'
+        gmake[1]: Leaving directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo'
         
       exitCode: 0
   -
@@ -351,20 +351,20 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC']
+        ignore line: [Change Dir: '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_d73a6/fast]
-        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_d73a6.dir/build.make CMakeFiles/cmTC_d73a6.dir/build]
-        ignore line: [gmake[1]: Entering directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC']
-        ignore line: [Building CXX object CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang++   -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_d34b6/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_d34b6.dir/build.make CMakeFiles/cmTC_d34b6.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang++   -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang version 14.0.6]
         ignore line: [Target: arm64-apple-darwin20.0.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Users/davidpavlicek03/anaconda3/bin]
         ignore line: [clang-14: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ (in-process)]
-        ignore line: [ "/Users/davidpavlicek03/anaconda3/bin/clang-14" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 530 -v -fcoverage-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC -resource-dir /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /Users/davidpavlicek03/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /Users/davidpavlicek03/anaconda3/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC -ferror-limit 19 -fvisibility-inlines-hidden -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Users/davidpavlicek03/anaconda3/bin/clang-14" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=14.4 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 530 -v -fcoverage-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo -resource-dir /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isystem /Users/davidpavlicek03/anaconda3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /Users/davidpavlicek03/anaconda3/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo -ferror-limit 19 -fvisibility-inlines-hidden -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.30.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target arm64-apple-darwin23.5.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
@@ -376,14 +376,14 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_d73a6]
-        ignore line: [/opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d73a6.dir/link.txt --verbose=1]
-        ignore line: [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang++ -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -Wl -pie -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/davidpavlicek03/anaconda3/lib -L/Users/davidpavlicek03/anaconda3/lib -v -Wl -v CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d73a6]
+        ignore line: [Linking CXX executable cmTC_d34b6]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d34b6.dir/link.txt --verbose=1]
+        ignore line: [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang++ -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -fmessage-length=0 -isystem /Users/davidpavlicek03/anaconda3/include  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -Wl -pie -Wl -headerpad_max_install_names -Wl -dead_strip_dylibs -Wl -rpath /Users/davidpavlicek03/anaconda3/lib -L/Users/davidpavlicek03/anaconda3/lib -v -Wl -v CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d34b6]
         ignore line: [clang version 14.0.6]
         ignore line: [Target: arm64-apple-darwin20.0.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Users/davidpavlicek03/anaconda3/bin]
-        link line: [ "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld" -demangle -lto_library /Users/davidpavlicek03/anaconda3/lib/libLTO.14.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_d73a6 -L/Users/davidpavlicek03/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/davidpavlicek03/anaconda3/lib -v CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld" -demangle -lto_library /Users/davidpavlicek03/anaconda3/lib/libLTO.14.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_d34b6 -L/Users/davidpavlicek03/anaconda3/lib -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/davidpavlicek03/anaconda3/lib -v CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a]
           arg [/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -399,7 +399,7 @@ events:
           arg [-syslibroot] ==> ignore
           arg [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_d73a6] ==> ignore
+          arg [cmTC_d34b6] ==> ignore
           arg [-L/Users/davidpavlicek03/anaconda3/lib] ==> dir [/Users/davidpavlicek03/anaconda3/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
@@ -409,7 +409,7 @@ events:
           arg [-rpath] ==> ignore
           arg [/Users/davidpavlicek03/anaconda3/lib] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_d73a6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_d34b6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a] ==> lib [/Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/lib/darwin/libclang_rt.osx.a]
@@ -421,7 +421,7 @@ events:
         ignore line: [	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
         ignore line: [Framework search paths:]
         ignore line: [	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/]
-        ignore line: [gmake[1]: Leaving directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-HeW2LC']
+        ignore line: [gmake[1]: Leaving directory '/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/CMakeScratch/TryCompile-rJfRBo']
         ignore line: []
         ignore line: []
         Library search paths: [;/Users/davidpavlicek03/anaconda3/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]

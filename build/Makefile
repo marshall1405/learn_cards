@@ -153,6 +153,30 @@ src/app/card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_cards.dir/build.make CMakeFiles/learn_cards.dir/src/app/card.cpp.s
 .PHONY : src/app/card.cpp.s
 
+src/app/menu.o: src/app/menu.cpp.o
+.PHONY : src/app/menu.o
+
+# target to build an object file
+src/app/menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_cards.dir/build.make CMakeFiles/learn_cards.dir/src/app/menu.cpp.o
+.PHONY : src/app/menu.cpp.o
+
+src/app/menu.i: src/app/menu.cpp.i
+.PHONY : src/app/menu.i
+
+# target to preprocess a source file
+src/app/menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_cards.dir/build.make CMakeFiles/learn_cards.dir/src/app/menu.cpp.i
+.PHONY : src/app/menu.cpp.i
+
+src/app/menu.s: src/app/menu.cpp.s
+.PHONY : src/app/menu.s
+
+# target to generate assembly for a file
+src/app/menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_cards.dir/build.make CMakeFiles/learn_cards.dir/src/app/menu.cpp.s
+.PHONY : src/app/menu.cpp.s
+
 src/app/set.o: src/app/set.cpp.o
 .PHONY : src/app/set.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... src/app/card.o"
 	@echo "... src/app/card.i"
 	@echo "... src/app/card.s"
+	@echo "... src/app/menu.o"
+	@echo "... src/app/menu.i"
+	@echo "... src/app/menu.s"
 	@echo "... src/app/set.o"
 	@echo "... src/app/set.i"
 	@echo "... src/app/set.s"
