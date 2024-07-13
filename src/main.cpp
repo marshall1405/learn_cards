@@ -14,6 +14,8 @@ wxIMPLEMENT_APP(learn_cards);
 
 bool learn_cards::OnInit(){
     Menu* menu = new Menu("Menu");
+    menu->SetClientSize(800,600);
+    menu->Center();
     menu->Show();
     return true;
 }
