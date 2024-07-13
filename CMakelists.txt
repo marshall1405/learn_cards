@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(learn_cards)
+
+# Assuming source files are in the src directory
+add_executable(learn_cards src/main.cpp src/app/card.cpp src/app/set.cpp)
