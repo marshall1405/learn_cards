@@ -1,0 +1,93 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "Clang",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/Users/davidpavlicek03/anaconda3/include",
+						"/Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/Users/davidpavlicek03/anaconda3/lib",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
+					],
+					"linkFrameworkDirectories" : 
+					[
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+					],
+					"linkLibraries" : []
+				},
+				"path" : "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang",
+				"version" : "14.0.6"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "Clang",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/Users/davidpavlicek03/anaconda3/include",
+						"/Users/davidpavlicek03/anaconda3/include/c++/v1",
+						"/Users/davidpavlicek03/anaconda3/lib/clang/14.0.6/include",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/Users/davidpavlicek03/anaconda3/lib",
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib"
+					],
+					"linkFrameworkDirectories" : 
+					[
+						"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+					],
+					"linkLibraries" : 
+					[
+						"c++"
+					]
+				},
+				"path" : "/Users/davidpavlicek03/anaconda3/bin/arm64-apple-darwin20.0.0-clang++",
+				"version" : "14.0.6"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

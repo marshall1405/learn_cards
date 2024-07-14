@@ -1,0 +1,3 @@
+/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/learn_cards.dir
+/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/edit_cache.dir
+/Users/davidpavlicek03/Desktop/Other/Projects/learn_cards/build/CMakeFiles/rebuild_cache.dir

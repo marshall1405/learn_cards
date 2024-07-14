@@ -3,10 +3,14 @@ cmake_minimum_required(VERSION 3.10)
 project(learn_cards)
 
 set(wxWidgets_ROOT_DIR "/external/wxWidgets-3.2.5")
+set(SDL2_SOURCE_DIR "/external/SDL-release-2.30.5")
+
 find_package(wxWidgets REQUIRED COMPONENTS core base)
+find_package(SDL2 REQUIRED)
 
 include(${wxWidgets_USE_FILE})
+include_directories(${SDL2_INCLUDE_DIRS})
 
 add_executable(learn_cards src/main.cpp src/app/card.cpp src/app/set.cpp src/app/menu.cpp)
 
-target_link_libraries(learn_cards ${wxWidgets_LIBRARIES})
+target_link_libraries(learn_cards ${wxWidgets_LIBRARIES} ${SDL2_LIBRARIES})
