@@ -7,9 +7,9 @@
 class Set{
     private:
     std::string name;
-    std::set<Card, Card::CardComparator> cards;
+    std::set<Card> cards;
     public:
-    Set(std::string _name, std::set<Card, Card::CardComparator> _cards);
+    Set(std::string _name, std::set<Card> _cards);
 
     bool operator<(const Set& other) const;
 
@@ -18,7 +18,7 @@ class Set{
     bool operator<=(const Set& other) const;
 
     bool operator>=(const Set& other) const;
-    
+
     friend std::ostream& operator<<(std::ostream& COUT, const Set& s);
 
     std::string get_name() const{

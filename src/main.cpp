@@ -17,12 +17,12 @@ Card c4(1, "SE1", "Block4");
 Card c5(1, "SE1", "Block5");
 Card c6(1, "SE1", "Block6");
 
-std::set<Card, Card::CardComparator> block1 = {c1};
-std::set<Card, Card::CardComparator> block2 = {c2};
-std::set<Card, Card::CardComparator> block3 = {c3};
-std::set<Card, Card::CardComparator> block4 = {c4};
-std::set<Card, Card::CardComparator> block5 = {c5};
-std::set<Card, Card::CardComparator> block6 = {c6};
+std::set<Card> block1 = {c1};
+std::set<Card> block2 = {c2};
+std::set<Card> block3 = {c3};
+std::set<Card> block4 = {c4};
+std::set<Card> block5 = {c5};
+std::set<Card> block6 = {c6};
 
 Set s1("SE1 Block1", block1);
 Set s2("SE1 Block2", block2);

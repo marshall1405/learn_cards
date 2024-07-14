@@ -3,7 +3,7 @@
 #include <stdexcept>
 
 
-Set::Set(std::string _name, std::set<Card, Card::CardComparator> _cards) : name(_name), cards(_cards){
+Set::Set(std::string _name, std::set<Card> _cards) : name(_name), cards(_cards){
     if(cards.empty()){
         throw std::runtime_error("Set cannot be empty!");
     }

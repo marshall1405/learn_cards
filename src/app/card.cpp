@@ -8,8 +8,20 @@ Card::Card(int _rank, std::string _term, std::string _answer) : rank(_rank), ter
     }
 }
 
-bool Card::CardComparator::operator()(const Card& c1, const Card& c2) const {
-    return c1.rank < c2.rank;
+bool Card::operator<(const Card& other) const {
+    return rank < other.rank;
+}
+
+bool Card::operator>(const Card& other) const {
+    return rank > other.rank;
+}
+
+bool Card::operator<=(const Card& other) const {
+    return rank <= other.rank;
+}
+
+bool Card::operator>=(const Card& other) const {
+    return rank < other.rank;
 }
 
 bool operator==(const Card& c1, const Card& c2){
