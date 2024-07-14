@@ -10,4 +10,7 @@ So the main goals are: Learn C++ and get into Electrical and Computer Engineerin
 
 ### How To Get Going
 
-As of now, it is not in any functioning state and it will probably take a while before it is. :P
+##### Needed Libraries
+
+- wxWidgets - for GUI
+- SDL - for KeyListening

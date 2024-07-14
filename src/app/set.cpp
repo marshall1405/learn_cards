@@ -12,6 +12,22 @@ Set::Set(std::string _name, std::set<Card, Card::CardComparator> _cards) : name(
     }
 }
 
+bool Set::operator<(const Set& other) const {
+    return name < other.name;
+}
+
+bool Set::operator>(const Set& other) const{
+    return name > other.name;
+}
+
+bool Set::operator<=(const Set& other) const {
+    return name <= other.name;
+}
+
+bool Set::operator>=(const Set& other) const {
+    return name >= other.name;
+}
+
 std::ostream& operator<<(std::ostream& COUT, const Set& s){
     COUT << s.name;
     return COUT;
