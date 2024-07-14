@@ -12,5 +12,6 @@ So the main goals are: Learn C++ and get into Electrical and Computer Engineerin
 
 ##### Needed Libraries
 
-- wxWidgets - for GUI
-- SDL - for KeyListening
+- wxWidgets
+
+Run the CMakelists to create the executable file. Open the new build directory and open the learn_cards executable.
