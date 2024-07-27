@@ -28,11 +28,6 @@ bool operator==(const Card& c1, const Card& c2){
     return c1.term == c2.term;
 }
 
-std::ostream& operator<<(std::ostream& COUT, const Card& c){
-    COUT << c.term << "\n";
-    return COUT;
-}
-
 std::string Card::get_answer() const{
     return answer;
 }

@@ -9,6 +9,7 @@
 class Card{
     private:
     int rank;
+    bool showing_term = true;
     std::string term;
     std::string answer;
 
@@ -24,9 +25,7 @@ class Card{
     bool operator>=(const Card& other) const;
     
     friend bool operator==(const Card& c1, const Card& c2);
-
-    friend std::ostream& operator<<(std::ostream& COUT, const Card& c);
-
+    
     std::string get_term() const;
 
     std::string get_answer() const;

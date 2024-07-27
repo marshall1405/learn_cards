@@ -1,12 +1,10 @@
 #include "../header/set_window.h"
 
-Set_window::Set_window(wxString title, const Set& _set, wxFrame* _menu)
-    : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600)), set(_set), menu(_menu) {
+Set_window::Set_window(wxString title,const Set& _set, Menu* _menu) : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600)), set(_set), menu(_menu) {
 
     wxPanel* panel = new wxPanel(this, wxID_ANY);
 
-    std::set<Card> cards = set.get_cards();
-    term = cards.begin()->get_term();
+    this->current_card = &*set.get_cards().begin();
 
     wxStaticText* staticText = new wxStaticText(panel, wxID_ANY, term, wxDefaultPosition, wxDefaultSize, wxALIGN_CENTER);
 
@@ -28,9 +26,11 @@ void Set_window::set_window_controls(wxKeyEvent& event){
     int keyCode = event.GetKeyCode();
     if(keyCode == WXK_BACK){
         menu->Show();
+        menu->Raise();
+        menu->going_back();
         this->Destroy();
     }else if(keyCode == WXK_RETURN){
-        turn_card();
+        std::string text = turn_card();
     }else if(keyCode == WXK_RIGHT){
         go_to_next_card(keyCode);
     }else if(keyCode == WXK_LEFT){
@@ -38,12 +38,9 @@ void Set_window::set_window_controls(wxKeyEvent& event){
     }
 }
 
-void Set_window::turn_card(){
-    if(term == set.get_cards().begin()->get_term()){
-        term = set.get_cards().begin()->get_answer();
-    }else{
-        set.get_cards().begin()->get_term();
-    }
+
+std::string Set_window::turn_card(){
+    return "cock";
 }
 
 void Set_window::go_to_next_card(int keyCode){

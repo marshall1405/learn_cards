@@ -42,11 +42,11 @@ void Menu::menu_controls(wxKeyEvent& event){
             box->SetSelection(selection);
         }
     }else if(keyCode == WXK_RETURN){
-        this->goIntoSet();
+        this->go_into_set();
     }
 }
 
-void Menu::goIntoSet(){
+void Menu::go_into_set(){
     int selection = box->GetSelection();
     wxString selectedItem = box->GetString(selection);
     auto it = learning_sets.begin();
@@ -56,5 +56,10 @@ void Menu::goIntoSet(){
     }
     Set_window* set_win = new Set_window(selectedItem, *it, this);
     set_win->Show();
+    set_win->Center();
     this->Hide();
+}
+
+void Menu::going_back(){
+    box->SetFocus();
 }

@@ -7,16 +7,18 @@
 
 class Set_window : public wxFrame {
     Set set;
-    wxFrame* menu;
+    const Card* current_card;
+    Menu* menu;
     wxString term;
+
 public:
-    Set_window(wxString title, const Set& _set, wxFrame* _menu);
+    Set_window(wxString title,const Set& _set, Menu* _menu);
 
 private:
 
     void set_window_controls(wxKeyEvent& event);
 
-    void turn_card();
+    std::string turn_card();
 
     void go_to_next_card(int keyCode);
 };

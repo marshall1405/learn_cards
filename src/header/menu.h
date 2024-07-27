@@ -12,11 +12,13 @@ class Menu : public wxFrame{
     public:
     Menu(const wxString& title, std::set<Set> _learning_sets);
 
+    void going_back();
+
     private:
 
     void menu_controls(wxKeyEvent& event);
 
-    void goIntoSet();
+    void go_into_set();
 
 };
 
