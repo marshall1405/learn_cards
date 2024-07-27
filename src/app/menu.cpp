@@ -1,4 +1,5 @@
 #include "../header/menu.h"
+#include "../header/set_window.h"
 
 
 Menu::Menu(const wxString& title, std::set<Set> _learning_sets) : wxFrame(nullptr, wxID_ANY, title), learning_sets(_learning_sets){
@@ -13,7 +14,7 @@ Menu::Menu(const wxString& title, std::set<Set> _learning_sets) : wxFrame(nullpt
         box->SetSelection(0);
     }
 
-    box->Bind(wxEVT_KEY_DOWN, &Menu::controls, this);
+    box->Bind(wxEVT_KEY_DOWN, &Menu::menu_controls, this);
     
     for(auto it = learning_sets.begin(); it != learning_sets.end(); it++){
         box->Append(it->get_name());
@@ -22,7 +23,7 @@ Menu::Menu(const wxString& title, std::set<Set> _learning_sets) : wxFrame(nullpt
 
 
 
-void Menu::controls(wxKeyEvent& event){
+void Menu::menu_controls(wxKeyEvent& event){
     int keyCode = event.GetKeyCode();
     int selection = box->GetSelection();
 
@@ -46,5 +47,14 @@ void Menu::controls(wxKeyEvent& event){
 }
 
 void Menu::goIntoSet(){
-    wxMessageBox("Enter key pressed, going into set");
+    int selection = box->GetSelection();
+    wxString selectedItem = box->GetString(selection);
+    auto it = learning_sets.begin();
+    while(selection > 0){
+        it++;
+        selection--;
+    }
+    Set_window* set_win = new Set_window(selectedItem, *it, this);
+    set_win->Show();
+    this->Hide();
 }

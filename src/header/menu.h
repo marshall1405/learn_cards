@@ -14,7 +14,7 @@ class Menu : public wxFrame{
 
     private:
 
-    void controls(wxKeyEvent& event);
+    void menu_controls(wxKeyEvent& event);
 
     void goIntoSet();
 
