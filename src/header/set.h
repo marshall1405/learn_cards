@@ -21,9 +21,9 @@ class Set{
 
     friend std::ostream& operator<<(std::ostream& COUT, const Set& s);
 
-    std::string get_name() const{
-        return name;
-    }
+    std::string get_name() const;
+
+    std::set<Card> get_cards() const;
 };
 
 

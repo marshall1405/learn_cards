@@ -28,6 +28,14 @@ bool Set::operator>=(const Set& other) const {
     return name >= other.name;
 }
 
+std::string Set::get_name() const{
+    return name;
+}
+
+std::set<Card> Set::get_cards() const{
+    return cards;
+}
+
 std::ostream& operator<<(std::ostream& COUT, const Set& s){
     COUT << s.name;
     return COUT;

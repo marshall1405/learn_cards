@@ -32,3 +32,11 @@ std::ostream& operator<<(std::ostream& COUT, const Card& c){
     COUT << c.term << "\n";
     return COUT;
 }
+
+std::string Card::get_answer() const{
+    return answer;
+}
+
+std::string Card::get_term() const{
+    return term;
+}

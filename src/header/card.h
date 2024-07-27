@@ -26,6 +26,10 @@ class Card{
     friend bool operator==(const Card& c1, const Card& c2);
 
     friend std::ostream& operator<<(std::ostream& COUT, const Card& c);
+
+    std::string get_term() const;
+
+    std::string get_answer() const;
 };
 
 #endif
