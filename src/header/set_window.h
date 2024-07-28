@@ -11,8 +11,9 @@ class Set_window : public wxFrame {
     Menu* menu;
     wxString term;
     wxString answer;
+    wxStaticText* progress_text;
     wxStaticText* static_text;
-    size_t progress;
+    size_t progress = 1;
 
 public:
     Set_window(wxString title,const Set& _set, Menu* _menu);
@@ -21,6 +22,8 @@ private:
     void set_window_controls(wxKeyEvent& event);
 
     void go_to_next_card(int keyCode);
+
+    void update_progress_text();
 };
 
 #endif

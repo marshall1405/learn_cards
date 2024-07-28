@@ -10,12 +10,12 @@ class learn_cards : public wxApp{
     virtual bool OnInit();
 };
 
-Card c1(1, "SE1", "Block1");
-Card c2(2, "SE1", "Block2");
-Card c3(3, "SE1", "Block3");
-Card c4(4, "SE1", "Block4");
-Card c5(5, "SE1", "Block5");
-Card c6(6, "SE1", "Block6");
+Card c1(1, "Block1Term", "Block1");
+Card c2(2, "Block2Term", "Block2");
+Card c3(3, "Block3Term", "Block3");
+Card c4(4, "Block4Term", "Block4");
+Card c5(5, "Block5Term", "Block5");
+Card c6(6, "Block6Term", "Block6");
 
 std::set<Card> block1 = {c1,c2,c3};
 std::set<Card> block2 = {c4,c5,c6};
