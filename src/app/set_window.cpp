@@ -4,8 +4,7 @@ Set_window::Set_window(wxString title,const Set& _set, Menu* _menu) : wxFrame(NU
 
     wxPanel* panel = new wxPanel(this, wxID_ANY);
 
-    std::set<Card> cards = set.get_cards();
-    current_card = &*cards.begin();
+    current_card = &*set.get_cards().begin();
     term = current_card->get_term();
     answer = current_card->get_answer();
 
@@ -50,7 +49,34 @@ void Set_window::set_window_controls(wxKeyEvent& event){
     }
 }
 
-void Set_window::go_to_next_card(int keyCode){
+void Set_window::go_to_next_card(int keyCode) {
+    const auto& cards = set.get_cards(); // Use a const reference
 
+    if (progress >= cards.size()) {
+        menu->Show();
+        menu->Raise();
+        menu->going_back();
+        this->Destroy();
+        return;
+    }
+
+    auto it = cards.begin();
+    std::advance(it, progress);
+
+    if (it == cards.end()) {
+        menu->Show();
+        menu->Raise();
+        menu->going_back();
+        this->Destroy();
+        return;
+    }
+
+    current_card = &*it;
+    term = current_card->get_term();
+    answer = current_card->get_answer();
+    static_text->SetLabel(term);
+
+    static_text->GetParent()->Layout();
+    progress++;
 }
 

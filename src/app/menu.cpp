@@ -50,10 +50,7 @@ void Menu::go_into_set(){
     int selection = box->GetSelection();
     wxString selectedItem = box->GetString(selection);
     auto it = learning_sets.begin();
-    while(selection > 0){
-        it++;
-        selection--;
-    }
+    std::advance(it, selection);
     Set_window* set_win = new Set_window(selectedItem, *it, this);
     set_win->Show();
     set_win->Center();

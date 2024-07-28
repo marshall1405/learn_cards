@@ -32,7 +32,7 @@ std::string Set::get_name() const{
     return name;
 }
 
-std::set<Card> Set::get_cards() const{
+const std::set<Card>& Set::get_cards() const{
     return cards;
 }
 

@@ -12,12 +12,12 @@ class Set_window : public wxFrame {
     wxString term;
     wxString answer;
     wxStaticText* static_text;
+    size_t progress;
 
 public:
     Set_window(wxString title,const Set& _set, Menu* _menu);
 
 private:
-
     void set_window_controls(wxKeyEvent& event);
 
     void go_to_next_card(int keyCode);

@@ -23,7 +23,7 @@ class Set{
 
     std::string get_name() const;
 
-    std::set<Card> get_cards() const;
+    const std::set<Card>& get_cards() const;
 };
 
 

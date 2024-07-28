@@ -11,27 +11,19 @@ class learn_cards : public wxApp{
 };
 
 Card c1(1, "SE1", "Block1");
-Card c2(1, "SE1", "Block2");
-Card c3(1, "SE1", "Block3");
-Card c4(1, "SE1", "Block4");
-Card c5(1, "SE1", "Block5");
-Card c6(1, "SE1", "Block6");
+Card c2(2, "SE1", "Block2");
+Card c3(3, "SE1", "Block3");
+Card c4(4, "SE1", "Block4");
+Card c5(5, "SE1", "Block5");
+Card c6(6, "SE1", "Block6");
 
-std::set<Card> block1 = {c1};
-std::set<Card> block2 = {c2};
-std::set<Card> block3 = {c3};
-std::set<Card> block4 = {c4};
-std::set<Card> block5 = {c5};
-std::set<Card> block6 = {c6};
+std::set<Card> block1 = {c1,c2,c3};
+std::set<Card> block2 = {c4,c5,c6};
 
-Set s1("SE1 Block1", block1);
-Set s2("SE1 Block2", block2);
-Set s3("SE1 Block3", block3);
-Set s4("SE1 Block4", block4);
-Set s5("SE1 Block5", block5);
-Set s6("SE1 Block6", block6);
+Set s1("SE1 Test1", block1);
+Set s2("SE1 Test2", block2);
 
-std::set<Set> sets = {s1,s2,s3,s4,s5,s6};
+std::set<Set> sets = {s1,s2};
 
 wxIMPLEMENT_APP(learn_cards);
 
