@@ -4,16 +4,22 @@ Set_window::Set_window(wxString title,const Set& _set, Menu* _menu) : wxFrame(NU
 
     wxPanel* panel = new wxPanel(this, wxID_ANY);
 
-    this->current_card = &*set.get_cards().begin();
+    std::set<Card> cards = set.get_cards();
+    current_card = &*cards.begin();
+    term = current_card->get_term();
+    answer = current_card->get_answer();
 
-    wxStaticText* staticText = new wxStaticText(panel, wxID_ANY, term, wxDefaultPosition, wxDefaultSize, wxALIGN_CENTER);
+    static_text = new wxStaticText(panel, wxID_ANY, term, wxDefaultPosition, wxDefaultSize, wxALIGN_CENTER);
 
-    wxFont font = staticText->GetFont();
+    wxFont font = static_text->GetFont();
     font.SetPointSize(24);
-    staticText->SetFont(font);
+    static_text->SetFont(font);
 
     wxBoxSizer* sizer = new wxBoxSizer(wxVERTICAL);
-    sizer->Add(staticText, 1, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 10); // Center and add padding
+
+    sizer->Add(0, 1, 1);
+    sizer->Add(static_text, 0, wxALIGN_CENTER | wxALL, 10);
+    sizer->Add(0, 1, 1);
 
     panel->SetSizerAndFit(sizer);
 
@@ -30,17 +36,18 @@ void Set_window::set_window_controls(wxKeyEvent& event){
         menu->going_back();
         this->Destroy();
     }else if(keyCode == WXK_RETURN){
-        std::string text = turn_card();
+        wxString current_text = static_text->GetLabel();
+        if(current_text == term){
+            static_text->SetLabel(answer);
+        }else{
+            static_text->SetLabel(term);
+        }
+        static_text->GetParent()->Layout();
     }else if(keyCode == WXK_RIGHT){
         go_to_next_card(keyCode);
     }else if(keyCode == WXK_LEFT){
         go_to_next_card(keyCode);
     }
-}
-
-
-std::string Set_window::turn_card(){
-    return "cock";
 }
 
 void Set_window::go_to_next_card(int keyCode){
