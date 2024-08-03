@@ -41,6 +41,7 @@ void Set_window::set_window_controls(wxKeyEvent& event){
         menu->Raise();
         menu->going_back();
         this->Destroy();
+    /*
     }else if(keyCode == WXK_RETURN){
         wxString current_text = static_text->GetLabel();
         if(current_text == term){
@@ -49,10 +50,20 @@ void Set_window::set_window_controls(wxKeyEvent& event){
             static_text->SetLabel(term);
         }
         static_text->GetParent()->Layout();
+    */
     }else if(keyCode == WXK_RIGHT){
         go_to_next_card(keyCode);
     }else if(keyCode == WXK_LEFT){
         go_to_next_card(keyCode);
+    //else if for ubuntu enter doesnt work
+    }else if(keyCode == 308){
+        wxString current_text = static_text->GetLabel();
+        if(current_text == term){
+            static_text->SetLabel(answer);
+        }else{
+            static_text->SetLabel(term);
+        }
+        static_text->GetParent()->Layout();
     }
 }
 

@@ -41,7 +41,12 @@ void Menu::menu_controls(wxKeyEvent& event){
             selection = box->GetCount()-1;
             box->SetSelection(selection);
         }
+    /*
     }else if(keyCode == WXK_RETURN){
+        this->go_into_set();
+    */
+   //enter else if for ubuntu because it doesnt register enter
+    }else if(keyCode == 308){
         this->go_into_set();
     }
 }

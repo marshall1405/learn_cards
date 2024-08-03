@@ -48,5 +48,7 @@
         "optional": "cpp",
         "unordered_map": "cpp",
         "vector": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false,
+    "cmake.sourceDirectory": "/home/adams/Documents/Projects/learn_cards"
 }
