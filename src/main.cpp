@@ -1,6 +1,7 @@
 #include <wx/wx.h>
 #include <iostream>
 #include <sstream>
+#include <fstream>
 #include "./header/card.h"
 #include "./header/set.h"
 #include "./header/menu.h"
