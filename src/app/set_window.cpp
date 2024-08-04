@@ -55,7 +55,7 @@ void Set_window::set_window_controls(wxKeyEvent& event){
         go_to_next_card(keyCode);
     }else if(keyCode == WXK_LEFT){
         go_to_next_card(keyCode);
-    //else if for ubuntu enter doesnt work
+    //else if for ubuntu, enter doesnt work
     }else if(keyCode == 308){
         wxString current_text = static_text->GetLabel();
         if(current_text == term){
