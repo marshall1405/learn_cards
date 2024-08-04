@@ -14,4 +14,11 @@ So the main goals are: Learn C++ and get into Electrical and Computer Engineerin
 
 - wxWidgets
 
+##### How to create sets
+
+- All is done through a text file that is put into the main directory
+- The text file has to have this format -> "Term, Answer"
+- New Set starts with a line in this format -> "Name of the set"
+- To understand this a little better look at the test.txt file
+
 Run the CMakelists to create the executable file. Open the new build directory and open the learn_cards executable.
