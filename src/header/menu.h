@@ -8,7 +8,7 @@
 
 class Menu : public wxFrame{
     std::set<Set>& learning_sets;
-    Memory* memory;
+    Memory memory;
     wxListBox* box;
     
     public:

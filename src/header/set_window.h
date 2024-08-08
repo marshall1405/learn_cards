@@ -8,7 +8,7 @@
 #include "memory.h"
 
 class Set_window : public wxFrame {
-    Set set;
+    const Set& set;
     size_t set_size;
     const Card* current_card;
     Menu* menu;
@@ -19,7 +19,7 @@ class Set_window : public wxFrame {
     std::vector<int>& studied_cards;
 
 public:
-    Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<int>* _studied_cards);
+    Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<int>& _studied_cards);
 
 private:
     void set_window_controls(wxKeyEvent& event);

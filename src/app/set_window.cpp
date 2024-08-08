@@ -33,7 +33,7 @@ Set_window::Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<
 
     panel->Bind(wxEVT_KEY_DOWN, &Set_window::set_window_controls, this);
 
-    update_progress_text();
+    update_progress_text(card_num);
 }
 
 
@@ -78,11 +78,10 @@ void Set_window::go_to_next_card(int keyCode) {
         menu->Raise();
         menu->going_back();
         this->Destroy();
-        progress = 1;
         return;
     }else{
         auto it = set.get_cards().begin();
-        std::advance(it, card_num);
+        std::advance(it, next_card);
         current_card = &*it;
         term = current_card->get_term();
         answer = current_card->get_answer();
@@ -98,13 +97,10 @@ void Set_window::update_progress_text(int card) {
 
 
 int Set_window::find_next_card(){
-    auto it = set.get_cards().begin();
-    while(it != studied_cards.end() && std::find(studied_cards.begin(), studied_cards.end(), it->get_rank()) != studied_cards.end()){
-        it++;
+    for (const auto& card : set.get_cards()) {
+        if (std::find(studied_cards.begin(), studied_cards.end(), card.get_rank()) == studied_cards.end()) {
+            return card.get_rank();
+        }
     }
-    if(it == studied_cards.end()){
-        return 0;
-    }else{
-        return it->get_rank();
-    }
+    return 0; 
 }
