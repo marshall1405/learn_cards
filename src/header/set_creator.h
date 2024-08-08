@@ -9,7 +9,7 @@ class Set_creator{
 public:
     Set_creator(std::string _path);
 
-    std::set<Set> create_sets_from_txt();
+    std::set<Set>& create_sets_from_txt();
 };
 
 

@@ -1,12 +1,14 @@
 #include "../header/set_window.h"
 
-Set_window::Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<int>* _studied_cards) : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600)), set(_set), menu(_menu),  studied_cards(_studied_cards){
+Set_window::Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<int>& _studied_cards) : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600)), set(_set), menu(_menu),  studied_cards(_studied_cards){
 
     this->set_size = set.get_cards().size();
     wxPanel* panel = new wxPanel(this, wxID_ANY);
 
     int card_num = find_next_card();
-    current_card = set[card_num];
+    auto it = set.get_cards().begin();
+    std::advance(it, card_num);
+    current_card = &*it;
     term = current_card->get_term();
     answer = current_card->get_answer();
 
@@ -70,41 +72,26 @@ void Set_window::set_window_controls(wxKeyEvent& event){
 }
 
 void Set_window::go_to_next_card(int keyCode) {
-    const auto& cards = set.get_cards();
-
-    if (progress >= cards.size()) {
+    int next_card = find_next_card();
+    if(next_card == 0){
         menu->Show();
         menu->Raise();
         menu->going_back();
         this->Destroy();
         progress = 1;
         return;
+    }else{
+        auto it = set.get_cards().begin();
+        std::advance(it, card_num);
+        current_card = &*it;
+        term = current_card->get_term();
+        answer = current_card->get_answer();
+        update_progress_text(next_card);
     }
-
-    auto it = cards.begin();
-    std::advance(it, progress);
-
-    if (it == cards.end()) {
-        menu->Show();
-        menu->Raise();
-        menu->going_back();
-        this->Destroy();
-        progress = 1;
-        return;
-    }
-
-    current_card = &*it;
-    term = current_card->get_term();
-    answer = current_card->get_answer();
-    static_text->SetLabel(term);
-
-    static_text->GetParent()->Layout();
-    progress++;
-    update_progress_text();
 }
 
-void Set_window::update_progress_text() {
-    wxString progress_str = wxString::Format("%d/%zu", static_cast<int>(progress), set_size);
+void Set_window::update_progress_text(int card) {
+    wxString progress_str = wxString::Format("%d/%zu", card, set_size);
     progress_text->SetLabel(progress_str);
     progress_text->GetParent()->Layout();
 }

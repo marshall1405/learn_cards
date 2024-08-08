@@ -16,7 +16,7 @@ class Set_window : public wxFrame {
     wxString answer;
     wxStaticText* progress_text;
     wxStaticText* static_text;
-    std::vector<int>* studied_cards;
+    std::vector<int>& studied_cards;
 
 public:
     Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<int>* _studied_cards);
@@ -26,7 +26,7 @@ private:
 
     void go_to_next_card(int keyCode);
 
-    void update_progress_text();
+    void update_progress_text(int card);
 
     void got_card_right();
 

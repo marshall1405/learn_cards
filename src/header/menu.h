@@ -7,12 +7,12 @@
 
 
 class Menu : public wxFrame{
-    std::set<Set> learning_sets;
-    Memory memory;
+    std::set<Set>& learning_sets;
+    Memory* memory;
     wxListBox* box;
     
     public:
-    Menu(const wxString& title, std::set<Set> _learning_sets);
+    Menu(const wxString& title, std::set<Set>& _learning_sets);
 
     void going_back();
 

@@ -2,7 +2,9 @@
 #include "../header/set_window.h"
 
 
-Menu::Menu(const wxString& title, std::set<Set> _learning_sets) : wxFrame(nullptr, wxID_ANY, title), learning_sets(_learning_sets){
+Menu::Menu(const wxString& title, std::set<Set>& _learning_sets) : wxFrame(nullptr, wxID_ANY, title), learning_sets(_learning_sets){
+    this->memory = Memory(learning_sets);
+
     wxPanel* panel = new wxPanel(this, wxID_ANY);
     this->box = new wxListBox(panel, wxID_ANY, wxPoint(0, 0), wxSize(800, 600));
 
@@ -55,13 +57,15 @@ void Menu::go_into_set(){
     int selection = box->GetSelection();
     wxString selectedItem = box->GetString(selection);
     auto it = learning_sets.begin();
+    std::vector<int>& studied_cards = memory->get_progress_map()[selectedItem.mb_str()]; 
     std::advance(it, selection);
-    Set_window* set_win = new Set_window(selectedItem, *it, this);
+    Set_window* set_win = new Set_window(selectedItem, *it, this, studied_cards);
     set_win->Show();
     set_win->Center();
     this->Hide();
 }
 
 void Menu::going_back(){
+    memory->calibrate();
     box->SetFocus();
 }
