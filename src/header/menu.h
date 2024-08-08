@@ -3,10 +3,12 @@
 #include <wx/wx.h>
 #include <wx/listbox.h>
 #include "set.h"
+#include "memory.h"
 
 
 class Menu : public wxFrame{
     std::set<Set> learning_sets;
+    Memory memory;
     wxListBox* box;
     
     public:

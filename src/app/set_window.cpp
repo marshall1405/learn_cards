@@ -1,10 +1,12 @@
 #include "../header/set_window.h"
 
-Set_window::Set_window(wxString title,const Set& _set, Menu* _menu) : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600)), set(_set), menu(_menu) {
+Set_window::Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<int>* _studied_cards) : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600)), set(_set), menu(_menu),  studied_cards(_studied_cards){
 
+    this->set_size = set.get_cards().size();
     wxPanel* panel = new wxPanel(this, wxID_ANY);
 
-    current_card = &*set.get_cards().begin();
+    int card_num = find_next_card();
+    current_card = set[card_num];
     term = current_card->get_term();
     answer = current_card->get_answer();
 
@@ -102,7 +104,20 @@ void Set_window::go_to_next_card(int keyCode) {
 }
 
 void Set_window::update_progress_text() {
-    wxString progress_str = wxString::Format("%d/%zu", static_cast<int>(progress), set.get_cards().size());
+    wxString progress_str = wxString::Format("%d/%zu", static_cast<int>(progress), set_size);
     progress_text->SetLabel(progress_str);
     progress_text->GetParent()->Layout();
+}
+
+
+int Set_window::find_next_card(){
+    auto it = set.get_cards().begin();
+    while(it != studied_cards.end() && std::find(studied_cards.begin(), studied_cards.end(), it->get_rank()) != studied_cards.end()){
+        it++;
+    }
+    if(it == studied_cards.end()){
+        return 0;
+    }else{
+        return it->get_rank();
+    }
 }

@@ -29,6 +29,8 @@ class Card{
     std::string get_term() const;
 
     std::string get_answer() const;
+
+    int get_rank() const;
 };
 
 #endif

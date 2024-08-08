@@ -35,3 +35,7 @@ std::string Card::get_answer() const{
 std::string Card::get_term() const{
     return term;
 }
+
+int Card::get_rank() const{
+    return rank;
+}
