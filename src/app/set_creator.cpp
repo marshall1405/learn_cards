@@ -4,7 +4,7 @@ Set_creator::Set_creator(std::string _path) : path(_path){
 
 }
 
-std::set<Set>& Set_creator::create_sets_from_txt(){
+std::set<Set> Set_creator::create_sets_from_txt(){
     std::ifstream MyReadFile(this->path);
     std::string line;
     int rank = 1;
