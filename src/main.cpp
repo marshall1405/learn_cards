@@ -17,7 +17,7 @@ wxIMPLEMENT_APP(learn_cards);
 bool learn_cards::OnInit(){
     Set_creator creator("../test.txt");
     std::set<Set> sets = creator.create_sets_from_txt();
-    Menu* menu = new Menu("Menu", std::ref(sets));
+    Menu* menu = new Menu("Menu", sets);
     menu->SetClientSize(800,600);
     menu->Center();
     menu->Show();

@@ -2,7 +2,7 @@
 #include "../header/set_window.h"
 
 
-Menu::Menu(const wxString& title, std::set<Set>& _learning_sets) : wxFrame(nullptr, wxID_ANY, title), learning_sets(_learning_sets), memory(learning_sets){
+Menu::Menu(const wxString& title, std::set<Set> _learning_sets) : wxFrame(nullptr, wxID_ANY, title), learning_sets(_learning_sets), memory(learning_sets){
     wxPanel* panel = new wxPanel(this, wxID_ANY);
     this->box = new wxListBox(panel, wxID_ANY, wxPoint(0, 0), wxSize(800, 600));
 
@@ -39,18 +39,14 @@ void Menu::menu_controls(wxKeyEvent& event){
             selection = box->GetCount()-1;
             box->SetSelection(selection);
         }
-    /*
     }else if(keyCode == WXK_RETURN){
-        this->go_into_set();
-    */
-   //enter else if for ubuntu because it doesnt register enter
-    }else if(keyCode == 308){
         this->go_into_set();
     }
 }
 
-void Menu::go_into_set(){
+void Menu::go_into_set() {
     int selection = box->GetSelection();
+    std::cout << selection;
     wxString selectedItem = box->GetString(selection);
     auto it = learning_sets.begin();
     std::advance(it, selection);
@@ -60,6 +56,7 @@ void Menu::go_into_set(){
     set_win->Center();
     this->Hide();
 }
+
 
 void Menu::going_back(){
     memory.calibrate();

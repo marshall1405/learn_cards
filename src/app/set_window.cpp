@@ -1,11 +1,25 @@
 #include "../header/set_window.h"
 
-Set_window::Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<int>& _studied_cards) : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600)), set(_set), menu(_menu),  studied_cards(_studied_cards){
+Set_window::Set_window(wxString title, const Set& _set, Menu* _menu, std::vector<int>& _studied_cards) 
+    : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600)), set(_set), menu(_menu), studied_cards(_studied_cards) {
 
     this->set_size = set.get_cards().size();
     wxPanel* panel = new wxPanel(this, wxID_ANY);
 
+    // Safeguard: Ensure set has cards
+    if (set_size == 0) {
+        std::cerr << "Set has no cards!" << std::endl;
+        return;
+    }
+
     int card_num = find_next_card();
+
+    // Safeguard: Ensure card_num is within valid range
+    if (card_num < 0 || card_num >= set_size) {
+        std::cerr << "Invalid card number!" << std::endl;
+        return;
+    }
+
     auto it = set.get_cards().begin();
     std::advance(it, card_num);
     current_card = &*it;
@@ -36,8 +50,6 @@ Set_window::Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<
     update_progress_text(card_num);
 }
 
-
-
 void Set_window::set_window_controls(wxKeyEvent& event){
     int keyCode = event.GetKeyCode();
     if(keyCode == WXK_BACK){
@@ -45,7 +57,6 @@ void Set_window::set_window_controls(wxKeyEvent& event){
         menu->Raise();
         menu->going_back();
         this->Destroy();
-    /*
     }else if(keyCode == WXK_RETURN){
         wxString current_text = static_text->GetLabel();
         if(current_text == term){
@@ -54,20 +65,10 @@ void Set_window::set_window_controls(wxKeyEvent& event){
             static_text->SetLabel(term);
         }
         static_text->GetParent()->Layout();
-    */
     }else if(keyCode == WXK_RIGHT){
         go_to_next_card(keyCode);
     }else if(keyCode == WXK_LEFT){
         go_to_next_card(keyCode);
-    //else if for ubuntu, enter doesnt work
-    }else if(keyCode == 308){
-        wxString current_text = static_text->GetLabel();
-        if(current_text == term){
-            static_text->SetLabel(answer);
-        }else{
-            static_text->SetLabel(term);
-        }
-        static_text->GetParent()->Layout();
     }
 }
 
@@ -96,11 +97,19 @@ void Set_window::update_progress_text(int card) {
 }
 
 
-int Set_window::find_next_card(){
-    for (const auto& card : set.get_cards()) {
-        if (std::find(studied_cards.begin(), studied_cards.end(), card.get_rank()) == studied_cards.end()) {
-            return card.get_rank();
+int Set_window::find_next_card() {
+    return ++progress <= set_size ? progress : 0;
+    /*
+    if (studied_cards.empty()) {
+        return ++progress < set_size ? progress : 0;
+    } else {
+        for (const auto& card : set.get_cards()) {
+            if (std::find(studied_cards.begin(), studied_cards.end(), card.get_rank()) != studied_cards.end()) {
+                progress = card.get_rank();
+                return progress;
+            }
         }
     }
     return 0; 
+    */
 }

@@ -16,6 +16,7 @@ class Set_window : public wxFrame {
     wxString answer;
     wxStaticText* progress_text;
     wxStaticText* static_text;
+    int progress = 0;
     std::vector<int>& studied_cards;
 
 public:
