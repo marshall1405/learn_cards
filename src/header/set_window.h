@@ -25,7 +25,7 @@ public:
 private:
     void set_window_controls(wxKeyEvent& event);
 
-    void go_to_next_card(int keyCode);
+    void go_to_next_card(int key_code);
 
     void update_progress_text(int card);
 
@@ -33,7 +33,7 @@ private:
 
     void got_card_wrong();
 
-    int find_next_card();
+    int find_next_card(bool first_search);
 };
 
 #endif

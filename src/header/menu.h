@@ -14,7 +14,7 @@ class Menu : public wxFrame{
     public:
     Menu(const wxString& title, std::set<Set> _learning_sets);
 
-    void going_back();
+    void going_back(std::string set_name, std::vector<int> studied_cards);
 
     private:
 

@@ -2,12 +2,15 @@
 
 
 Memory::Memory(std::set<Set>& _learning_sets) : learning_sets(_learning_sets){
+    std::cout << "CREATING MEMORY \n";
     load_from_file();
+    std::cout << "LOADED \n";
     for(const auto& set : learning_sets){
-        if(progress_map.find(set.get_name()) == progress_map.end()){
+        if(progress_map.find(set.get_name()) != progress_map.end()){
             progress_map[set.get_name()] = std::vector<int>();
         }
     }
+    std::cout << "END OF THE CONSTRUCTOR \n";
 }
 
 Memory::~Memory(){
@@ -45,26 +48,33 @@ void Memory::save_to_file() const{
     }
 }
 
-void Memory::load_from_file(){
-    std::ifstream inFile(SAVE_FILE);
-    if (inFile.is_open()) {
+void Memory::load_from_file() {
+    std::ifstream in_file(SAVE_FILE);
+    if (in_file.is_open()) {
         std::string line;
-        while (std::getline(inFile, line)) {
+        while (std::getline(in_file, line)) {
             std::istringstream iss(line);
             std::string name;
             if (std::getline(iss, name, ':')) {
                 std::vector<int> progress;
-                std::string number;
-                while (std::getline(iss, number, ',')) {
-                    int value = std::stoi(number);
-                    progress.push_back(value);
+                std::string number, rest_of_line;
+                if (!rest_of_line.empty()) {
+                    std::istringstream values_stream(rest_of_line);
+                    while (std::getline(values_stream, number, ',')) {
+                        if (!number.empty()) {
+                            int value = std::stoi(number);
+                            progress.push_back(value);
+                        }
+                    }
                 }
                 progress_map[name] = progress;
             }
         }
-        inFile.close();
+        in_file.close();
     }
 }
+
+
 
 void Memory::calibrate(){
     for(auto set : learning_sets){
