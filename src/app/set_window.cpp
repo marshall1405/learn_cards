@@ -8,10 +8,10 @@ Set_window::Set_window(wxString title, const Set& _set, Menu* _menu, std::vector
     this->set_size = set.get_cards().size();
     wxPanel* panel = new wxPanel(this, wxID_ANY);
 
-    int card_num = find_next_card(true);
+    int card_num = find_next_card(0);
 
     auto it = set.get_cards().begin();
-    std::advance(it, card_num);
+    std::advance(it, --card_num);
     current_card = &*it;
     term = current_card->get_term();
     answer = current_card->get_answer();
@@ -73,7 +73,7 @@ void Set_window::go_to_next_card(int key_code) {
     if(key_code == WXK_RIGHT){
         studied_cards.push_back(progress);
     }
-    int next_card = find_next_card(false);
+    int next_card = find_next_card(key_code);
     if(next_card == -1){
         menu->Show();
         menu->Raise();
@@ -82,7 +82,7 @@ void Set_window::go_to_next_card(int key_code) {
         return;
     }else{
         auto it = set.get_cards().begin();
-        std::advance(it, next_card);
+        std::advance(it, --next_card);
         current_card = &*it;
         term = current_card->get_term();
         answer = current_card->get_answer();
@@ -98,19 +98,19 @@ void Set_window::update_progress_text(int card) {
 }
 
 
-int Set_window::find_next_card(bool first_search) {
-    if (studied_cards.empty()) {
-        if(first_search){
-            return 0;
-        }
-        return ++progress < set_size ? progress : 0;
-    }else{
-        for (const auto& card : set.get_cards()) {
-            if (std::find(studied_cards.begin(), studied_cards.end(), card.get_rank()) == studied_cards.end()) {
-                progress = card.get_rank();
-                return progress;
+int Set_window::find_next_card(int key_code) {
+    for (const auto& card : set.get_cards()) {
+        if(std::find(studied_cards.begin(), studied_cards.end(), card.get_rank()) == studied_cards.end()) {
+            if(key_code == 314){
+                if(card.get_rank() <= current_card->get_rank()) continue;
             }
+            if(key_code == 316){
+                if(card.get_rank() < current_card->get_rank()) continue;
+            }
+            progress = card.get_rank();
+            return progress;
         }
     }
-    return -1; 
+    return -1;
 }
+

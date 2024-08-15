@@ -76,10 +76,12 @@ void Memory::load_from_file() {
 }
 
 
-void Memory::calibrate(){
-    for(auto set : learning_sets){
-        if(progress_map[set.get_name()].size() == set.get_cards().size()){
-            progress_map[set.get_name()].clear();
+void Memory::calibrate(std::string set_name){
+    for(auto const& set : learning_sets){
+        if(set.get_name() == set_name){
+            if(set.get_cards().size() == progress_map[set_name].size()){
+                progress_map[set_name].clear();
+            }
         }
     }
 }

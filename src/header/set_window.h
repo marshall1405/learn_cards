@@ -29,11 +29,7 @@ private:
 
     void update_progress_text(int card);
 
-    void got_card_right();
-
-    void got_card_wrong();
-
-    int find_next_card(bool first_search);
+    int find_next_card(int key_code);
 };
 
 #endif

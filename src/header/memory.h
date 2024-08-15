@@ -26,7 +26,7 @@ public:
 
     void save_to_file() const;
 
-    void calibrate();
+    void calibrate(std::string set_name);
 
     std::map<std::string, std::vector<int>> get_progress_map() const;
 };

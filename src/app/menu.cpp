@@ -61,12 +61,12 @@ void Menu::go_into_set() {
 
 
 void Menu::going_back(std::string set_name, std::vector<int> studied_cards){
-    memory.calibrate();
     std::vector<int> memory_numbers = memory.get_progress_map()[set_name];
     for(int i : studied_cards){
         if(std::find(memory_numbers.begin(), memory_numbers.end(), i) == memory_numbers.end()){
             memory.add_to_memory(set_name,i);
         }
     }
+    memory.calibrate(set_name);
     box->SetFocus();
 }
