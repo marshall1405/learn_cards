@@ -2,7 +2,7 @@
 #include "../header/set_window.h"
 
 
-Set_window::Set_window(wxString title, const Set& _set, Menu* _menu, std::vector<int>& _studied_cards) 
+Set_window::Set_window(wxString title, const Set& _set, Menu* _menu, std::vector<int> _studied_cards) 
     : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600)), set(_set), menu(_menu), studied_cards(_studied_cards) {
 
     this->set_size = set.get_cards().size();
@@ -55,9 +55,7 @@ void Set_window::set_window_controls(wxKeyEvent& event){
             static_text->SetLabel(term);
         }
         static_text->GetParent()->Layout();
-    }else if(key_code == WXK_RIGHT){
-        go_to_next_card(key_code);
-    }else if(key_code == WXK_LEFT){
+    }else if(key_code == WXK_RIGHT || key_code == WXK_LEFT){
         go_to_next_card(key_code);
     }else if(key_code == 308){
         //NEEDED FOR UBUNTU BECAUSE WXK_RETURN DOESNT WORK

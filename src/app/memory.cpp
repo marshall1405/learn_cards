@@ -2,15 +2,12 @@
 
 
 Memory::Memory(std::set<Set>& _learning_sets) : learning_sets(_learning_sets){
-    std::cout << "CREATING MEMORY \n";
     load_from_file();
-    std::cout << "LOADED \n";
     for(const auto& set : learning_sets){
-        if(progress_map.find(set.get_name()) != progress_map.end()){
+        if(progress_map.find(set.get_name()) == progress_map.end()){
             progress_map[set.get_name()] = std::vector<int>();
         }
     }
-    std::cout << "END OF THE CONSTRUCTOR \n";
 }
 
 Memory::~Memory(){

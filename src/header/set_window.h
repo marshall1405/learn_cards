@@ -17,10 +17,10 @@ class Set_window : public wxFrame {
     wxStaticText* progress_text;
     wxStaticText* static_text;
     int progress = 0;
-    std::vector<int>& studied_cards;
+    std::vector<int> studied_cards;
 
 public:
-    Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<int>& _studied_cards);
+    Set_window(wxString title,const Set& _set, Menu* _menu, std::vector<int> _studied_cards);
 
 private:
     void set_window_controls(wxKeyEvent& event);
