@@ -3,11 +3,6 @@
 
 Memory::Memory(std::set<Set>& _learning_sets) : learning_sets(_learning_sets){
     load_from_file();
-    for(const auto& set : learning_sets){
-        if(progress_map.find(set.get_name()) == progress_map.end()){
-            progress_map[set.get_name()] = std::vector<int>();
-        }
-    }
 }
 
 Memory::~Memory(){
@@ -46,21 +41,28 @@ void Memory::save_to_file() const{
 }
 
 void Memory::load_from_file() {
-    std::ifstream in_file(SAVE_FILE);
-    if (in_file.is_open()) {
+    try {
+        std::ifstream in_file(SAVE_FILE);
+        if (!in_file.is_open()) {
+            throw std::runtime_error("Unable to open file");
+        }
         std::string line;
         while (std::getline(in_file, line)) {
             std::istringstream iss(line);
             std::string name;
             if (std::getline(iss, name, ':')) {
+                std::string rest_of_line;
+                std::getline(iss, rest_of_line); 
                 std::vector<int> progress;
-                std::string number, rest_of_line;
-                if (!rest_of_line.empty()) {
-                    std::istringstream values_stream(rest_of_line);
-                    while (std::getline(values_stream, number, ',')) {
-                        if (!number.empty()) {
+                std::string number;
+                std::istringstream values_stream(rest_of_line);
+                while (std::getline(values_stream, number, ',')) {
+                    if (!number.empty()) {
+                        try {
                             int value = std::stoi(number);
                             progress.push_back(value);
+                        } catch (const std::invalid_argument& e) {
+                            std::cerr << "Invalid number format: " << number << std::endl;
                         }
                     }
                 }
@@ -68,9 +70,10 @@ void Memory::load_from_file() {
             }
         }
         in_file.close();
+    } catch (const std::exception& e) {
+        std::cerr << "Exception: " << e.what() << std::endl;
     }
 }
-
 
 
 void Memory::calibrate(){

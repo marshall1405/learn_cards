@@ -99,21 +99,18 @@ void Set_window::update_progress_text(int card) {
 
 
 int Set_window::find_next_card(bool first_search) {
-    if(first_search){
-        return 0;
-    }
-    return ++progress < set_size ? progress : -1;
-    /*
     if (studied_cards.empty()) {
+        if(first_search){
+            return 0;
+        }
         return ++progress < set_size ? progress : 0;
-    } else {
+    }else{
         for (const auto& card : set.get_cards()) {
-            if (std::find(studied_cards.begin(), studied_cards.end(), card.get_rank()) != studied_cards.end()) {
+            if (std::find(studied_cards.begin(), studied_cards.end(), card.get_rank()) == studied_cards.end()) {
                 progress = card.get_rank();
                 return progress;
             }
         }
     }
     return -1; 
-    */
 }

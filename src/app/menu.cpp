@@ -49,7 +49,6 @@ void Menu::menu_controls(wxKeyEvent& event){
 
 void Menu::go_into_set() {
     int selection = box->GetSelection();
-    std::cout << selection;
     wxString selectedItem = box->GetString(selection);
     auto it = learning_sets.begin();
     std::advance(it, selection);

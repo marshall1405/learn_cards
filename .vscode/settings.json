@@ -77,7 +77,8 @@
         "sstream": "cpp",
         "stop_token": "cpp",
         "thread": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "__memory": "cpp"
     },
     "cmake.configureOnOpen": false,
     "cmake.sourceDirectory": "/home/adams/Documents/Projects/learn_cards"
