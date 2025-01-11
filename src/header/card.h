@@ -26,9 +26,9 @@ class Card{
     
     friend bool operator==(const Card& c1, const Card& c2);
     
-    std::string get_term() const;
+    const std::string& get_term() const;
 
-    std::string get_answer() const;
+    const std::string& get_answer() const;
 
     int get_rank() const;
 };

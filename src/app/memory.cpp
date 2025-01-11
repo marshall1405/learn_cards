@@ -87,6 +87,6 @@ void Memory::calibrate(std::string set_name){
 }
 
 
-std::map<std::string, std::vector<int>> Memory::get_progress_map() const{
+const std::map<std::string, std::vector<int>>& Memory::get_progress_map() const{
     return progress_map;
 }
